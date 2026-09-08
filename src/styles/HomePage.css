@@ -1,0 +1,272 @@
+/**
+ * Home Page Component Styles
+ */
+
+.home-page {
+  padding: 40px 0;
+  background-color: #f5f7fa;
+  min-height: calc(100vh - 150px);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 80px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.2);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.btn-large {
+  background-color: white;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 40px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-large:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Features Section */
+.features {
+  margin-bottom: 60px;
+}
+
+.features h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.feature-card p {
+  color: #666;
+  margin-bottom: 20px;
+  flex: 1;
+  line-height: 1.6;
+}
+
+.feature-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  align-self: center;
+}
+
+.feature-link:hover {
+  color: #0056b3;
+}
+
+/* Quick Stats / Navigation Section */
+.quick-stats {
+  margin-bottom: 40px;
+}
+
+.quick-stats h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.nav-card {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+.nav-card.search-card {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.nav-card.analytics-card {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+.nav-card.analytics-card:hover {
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+}
+
+.nav-card.history-card {
+  background: linear-gradient(135deg, #17a2b8 0%, #0d5a71 100%);
+  box-shadow: 0 4px 12px rgba(23, 162, 184, 0.2);
+}
+
+.nav-card.history-card:hover {
+  box-shadow: 0 8px 20px rgba(23, 162, 184, 0.3);
+}
+
+.nav-card .icon {
+  font-size: 36px;
+}
+
+.nav-card .label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+    margin-bottom: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .features h2,
+  .quick-stats h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .features-grid {
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    font-size: 36px;
+  }
+
+  .nav-cards {
+    gap: 15px;
+  }
+
+  .nav-card {
+    padding: 20px;
+  }
+
+  .nav-card .icon {
+    font-size: 28px;
+  }
+
+  .nav-card .label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    padding: 20px 0;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .features-grid,
+  .nav-cards {
+    grid-template-columns: 1fr;
+  }
+}
